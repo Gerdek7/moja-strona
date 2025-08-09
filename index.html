@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #555;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            gap: 20px;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(5px);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0078d7;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            margin-top: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        button {
+            padding: 12px 18px;
+            background: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #005ea6;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Animacje */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Witaj na mojej stronie</h1>
+        <p>To jest mój projekt zaliczeniowy</p>
+    </header>
+
+    <nav>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#projekty">Projekty</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="o-mnie">
+        <h2>O mnie</h2>
+        <p>Nazywam się Jan Kowalski i uczę się tworzenia stron internetowych. Lubię proste i estetyczne projekty.</p>
+    </section>
+
+    <section id="projekty">
+        <h2>Projekty</h2>
+        <p>Oto przykładowy projekt z interakcją w JavaScript:</p>
+        <button onclick="pokazAlert()">Kliknij mnie</button>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Email: jan.kowalski@example.com</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Jan Kowalski
+    </footer>
+
+    <script>
+        function pokazAlert() {
+            alert("Dziękuję za kliknięcie!");
+        }
+    </script>
+</body>
+</html>
